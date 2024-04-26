@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+<title>Cotizador de Apartamento</title>
+
+</head>
+
+<body>
+
+<h1>Cotizador de Apartamentos</h1>
+
+<form id="cotizadorForm">
+  <label for="valorMetro">Valor del Metro Cuadrado:</label>
+  <input type="number" id="valorMetro" name="valorMetro" required><br><br>
+  
+  <label for="area">Área del Apartamento:</label>
+  <input type="number" id="area" name="area" required><br><br>
+
+  <select id="tipoHabitacion" required>
+    <option value="1">Habitacion Sencilla ($20,000,000)</option>
+    <option value="2">Habitacion Full ($35,000,000)</option>
+  </select>
+
+<br><br>
+  
+  <button type="button" onclick="cotizar()">Cotizar</button>
+</form>
+
+<div id="resultado" style="display: none;">
+  <h2>Resultados:</h2>
+  <p id="valorInmueble"></p>
+  <p id="subsidio"></p>
+  <p id="valorParqueadero"></p>
+  <p id="habitacionAdicional"></p>
+  <p id="gastosMatricula"></p>
+  <p id="valorApartamento"></p>
+</div>
+
+
+
+<script src="cotizador.js"></script>
+
+
+    
+</body>
+</html>

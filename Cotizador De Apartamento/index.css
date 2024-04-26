@@ -1,0 +1,88 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(img/fondo2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+
+form {
+    margin: 20px auto;
+    width: 300px;
+    padding: 20px;
+    border: 15px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: black;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    color: black;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+    
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+p{
+    color: white;
+    font-size: 1.2em;
+}
+
+
+
+#cotizadorForm {
+    transition: transform 0.3s ease;
+  }
+  
+  
+  #cotizadorForm:hover {
+    transform: translateY(-15px); 
+  }
+  
+ 
+  input, select, button {
+    margin-bottom: 10px;
+  }
